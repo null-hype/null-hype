@@ -1,6 +1,6 @@
 # null-hype ($H_0$)
 
-> *"Rejecting the alternative hypothesis ($H_1$) by default."*
+> Well, obviously it just looks as though the Sun is going round the Earth.
 
 ### 0x00: The Axiom
 In science, the **Null Hypothesis ($H_0$)** assumes there is no relationship between variables until significant evidence proves otherwise.
