@@ -48,4 +48,11 @@ Because light attracts bugs.
 
 ---
 
+### 0x05: The Creed
+* **Measure twice, exploit once.**
+* **If it isn't automated, it isn't done.**
+* **The best rootkit is the one you wrote yourself.**
+
+---
+
 **Last updated:** 2026-03-09
