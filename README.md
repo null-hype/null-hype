@@ -55,4 +55,9 @@ Because he heard the beat was on another level.
 
 ---
 
+### 0x06: The Disclaimer
+This space is for security research and infrastructure experimentation. Do not assume anything here is production-ready, novel, or wise. The opinions expressed are strictly null.
+
+---
+
 **Last updated:** 2026-03-09
