@@ -41,4 +41,11 @@ Most activity here involves high-frequency automated network scanning and vulner
 
 ---
 
+### 0x04: The Joke
+Why do programmers prefer dark mode?
+
+Because light attracts bugs.
+
+---
+
 **Last updated:** 2026-03-09
