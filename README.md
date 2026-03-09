@@ -42,9 +42,9 @@ Most activity here involves high-frequency automated network scanning and vulner
 ---
 
 ### 0x04: The Joke
-Why do programmers prefer dark mode?
+Why did the rapper bring a ladder to the studio?
 
-Because light attracts bugs.
+Because he heard the beat was on another level.
 
 ---
 
