@@ -1,0 +1,18 @@
+{
+  "name": "playwright-linear-styleframes",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test --config=playwright.config.ts",
+    "iterate": "npx tsx generate-playwright-config.ts && playwright test --config=playwright.config.generated.ts",
+    "generate:config": "npx tsx generate-playwright-config.ts",
+    "test:styleframes": "playwright test tests/styleframes.spec.ts --config=playwright.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "dotenv": "^17.2.3",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
