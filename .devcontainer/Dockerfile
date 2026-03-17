@@ -15,6 +15,5 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get update \
     && apt-get install -y --no-install-recommends nodejs \
     && npm install -g @openai/codex @google/gemini-cli \
-    && curl -fsSL https://raw.githubusercontent.com/dagger/container-use/main/install.sh | bash \
     && mkdir -p /run/sshd \
     && rm -rf /var/lib/apt/lists/*
