@@ -3,6 +3,7 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers/features/node:1": {
       "version": "lts"
     },
@@ -27,5 +28,5 @@
       ]
     }
   },
-  "postCreateCommand": "npm install -g @openai/codex @google/gemini-cli"
+  "postCreateCommand": "bash .devcontainer/post-create.sh"
 }

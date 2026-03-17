@@ -1,0 +1,13 @@
+{
+  "coreTools": [],
+  "mcpServers": {
+    "container-use": {
+      "command": "container-use",
+      "args": [
+        "stdio"
+      ],
+      "timeout": 60000,
+      "trust": true
+    }
+  }
+}
