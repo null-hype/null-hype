@@ -1,0 +1,28 @@
+{
+  "name": "null-hype",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "forwardPorts": [
+    6080
+  ],
+  "portsAttributes": {
+    "6080": {
+      "label": "desktop"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "GitHub.codespaces",
+        "CodeSandbox-io.codesandbox-projects"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install -g @openai/codex @google/gemini-cli"
+}
