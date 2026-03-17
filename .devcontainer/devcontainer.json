@@ -1,12 +1,17 @@
 {
   "name": "null-hype",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "overrideFeatureInstallOrder": [
+    "ghcr.io/devcontainers/features/docker-in-docker",
+    "ghcr.io/devcontainers/features/desktop-lite",
+    "ghcr.io/devcontainers/features/sshd"
+  ],
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "lts"
-    },
     "ghcr.io/devcontainers/features/sshd:1": {
       "version": "latest"
     }
@@ -28,5 +33,5 @@
       ]
     }
   },
-  "postCreateCommand": "bash .devcontainer/post-create.sh"
+  "postStartCommand": "sudo mkdir -p /run/sshd && (sudo service ssh start || sudo /usr/sbin/sshd)"
 }
