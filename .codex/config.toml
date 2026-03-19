@@ -1,4 +1,11 @@
+[features]
+experimental_use_rmcp_client = true
+
 [mcp_servers.container-use]
 command = "container-use"
 args = ["stdio"]
 env = {}
+
+[mcp_servers.linear]
+url = "https://mcp.linear.app/mcp"
+bearer_token_env_var = "LINEAR_API_KEY"

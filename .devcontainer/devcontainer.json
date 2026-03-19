@@ -19,6 +19,18 @@
   "forwardPorts": [
     6080
   ],
+  "secrets": {
+    "ANTHROPIC_API_KEY": {
+      "description": "Anthropic API key for Claude Code inside the devcontainer."
+    },
+    "LINEAR_API_KEY": {
+      "description": "Linear API key used by the Linear MCP server."
+    }
+  },
+  "containerEnv": {
+    "ANTHROPIC_API_KEY": "${localEnv:ANTHROPIC_API_KEY}",
+    "LINEAR_API_KEY": "${localEnv:LINEAR_API_KEY}"
+  },
   "portsAttributes": {
     "6080": {
       "label": "desktop"

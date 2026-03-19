@@ -14,6 +14,6 @@ RUN export DEBIAN_FRONTEND=noninteractive \
       > /etc/apt/sources.list.d/nodesource.list \
     && apt-get update \
     && apt-get install -y --no-install-recommends nodejs \
-    && npm install -g @openai/codex @google/gemini-cli \
+    && npm install -g @anthropic-ai/claude-code @openai/codex @google/gemini-cli \
     && mkdir -p /run/sshd \
     && rm -rf /var/lib/apt/lists/*
