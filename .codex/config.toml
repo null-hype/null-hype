@@ -2,6 +2,7 @@
 experimental_use_rmcp_client = true
 
 [mcp_servers.container-use]
+startup_timeout_sec = 60
 command = "container-use"
 args = ["stdio"]
 env = {}
