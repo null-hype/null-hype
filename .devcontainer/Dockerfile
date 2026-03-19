@@ -13,7 +13,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_22.x nodistro main" \
       > /etc/apt/sources.list.d/nodesource.list \
     && apt-get update \
-    && apt-get install -y --no-install-recommends nodejs \
+    && apt-get install -y --no-install-recommends nodejs tmux \
     && npm install -g @anthropic-ai/claude-code @openai/codex @google/gemini-cli \
     && mkdir -p /run/sshd \
     && rm -rf /var/lib/apt/lists/*
