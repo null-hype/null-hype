@@ -25,11 +25,15 @@
     },
     "LINEAR_API_KEY": {
       "description": "Linear API key used by the Linear MCP server."
+    },
+    "GITHUB_PERSONAL_ACCESS_TOKEN": {
+      "description": "GitHub personal access token used by the GitHub MCP server."
     }
   },
   "containerEnv": {
     "ANTHROPIC_API_KEY": "${localEnv:ANTHROPIC_API_KEY}",
-    "LINEAR_API_KEY": "${localEnv:LINEAR_API_KEY}"
+    "LINEAR_API_KEY": "${localEnv:LINEAR_API_KEY}",
+    "GITHUB_PERSONAL_ACCESS_TOKEN": "${localEnv:GITHUB_PERSONAL_ACCESS_TOKEN}"
   },
   "portsAttributes": {
     "6080": {
