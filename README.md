@@ -5,6 +5,11 @@
 ### 0x00: The Axiom
 In science, the **Null Hypothesis ($H_0$)** assumes there is no relationship between variables until significant evidence proves otherwise.
 
+### MCP Setup
+The workspace Codex config includes `linear` and `github-mcp` servers.
+Set `LINEAR_API_KEY` and `GITHUB_PERSONAL_ACCESS_TOKEN` in your Codespaces secrets or local environment before starting the devcontainer.
+Because `.devcontainer/devcontainer.json` maps these with `${localEnv:...}` into `containerEnv`, adding or changing them typically requires rebuilding or restarting the Codespace/devcontainer, not just restarting the Codex session.
+
 In software, **Null Hype** assumes:
 1.  The "revolutionary" new tool is likely just noise.
 2.  The system is insecure by default.
