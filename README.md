@@ -1,42 +1,33 @@
-# null-hype ($H_0$)
+# Null Hype ($H_0$)
 
-> Well, obviously it just looks as though the Sun is going round the Earth.
+> *This profile is not a portfolio of promises; it is a log of evidence.*
 
-### 0x00: The Axiom
-In science, the **Null Hypothesis ($H_0$)** assumes there is no relationship between variables until significant evidence proves otherwise.
-
-In software, **Null Hype** assumes:
-1.  The "revolutionary" new tool is likely just noise.
-2.  The system is insecure by default.
-3.  Manual intervention is a failure of architecture.
-
-This profile is not a portfolio of promises; it is a log of evidence.
+Agent capabilities and automated changes can merge cleanly and pass tests while violating the business and security rules they seem to satisfy. My work turns agent capability governance into inspectable, typed checks that evaluate proposals before acceptance, flag policy violations with their underlying evidence, and record human supervisor exceptions without overwriting audit history.
 
 ---
 
-### 0x01: The Infrastructure (The Cyber Farm)
-I am currently architecting an automated, hermetic research environment designed to audit the void.
-* **Orchestration:** Argo Workflows, Dagger
-* **Verification:** Playwright, Terratest
-* **Configuration:** Pkl, Terraform
-* **Philosophy:** GitOps or GTFO.
+### Quick Access
 
-Most activity here involves high-frequency automated network scanning and vulnerability research. If you are seeing traffic from my agents, consult `SECURITY.md`.
-
----
-
-### 0x02: The Philosophy
-* **Contingency over Truth:** (Rorty) There is no "perfect code," only code that is useful for the current vocabulary of problems.
-* **Panta Rhei:** (Heraclitus) You cannot step into the same `main` branch twice. Everything is in flux; immutable infrastructure is the only way to survive the river.
-* **Kein Hype, Nur Daten:** (German) We speak in results, not marketing decks.
+- **Run the walkthrough:** [null-hype.tidelands.dev](https://null-hype.tidelands.dev) (interactive budget & authority lessons)
+- **60–120s Demo & Narrative:** [Walkthrough guide](https://github.com/null-hype/agent-plugins/blob/main/docs/launch/demo.md)
+- **Claim → Evidence Trail:** [claims and runnable test matrix](https://github.com/null-hype/agent-plugins/blob/main/docs/launch/claims-evidence.md)
+- **Source Code & Checks:** [null-hype/agent-plugins](https://github.com/null-hype/agent-plugins)
+- **UI Components & Storybook:** [Storybook preview](https://null-hype.github.io/agent-plugins/)
 
 ---
 
-### 0x03: Status
-| Component | State | Note |
-| :--- | :--- | :--- |
-| **Cyber Farm** | `Building` | The harvest is pending. |
-| **Research** | `Active` | Auditing the obscure. |
-| **Location** | `APAC` | Sydney / The Grid. |
+### Research & Consulting Focus
+
+- **Pre-Merge Semantic Invariants:** Detecting multi-agent capability and authorization drift before PR acceptance.
+- **Supervisor Protocols & Scoped Exceptions:** Recording supervisor overrides without discarding or mutating the original violation record.
+- **Evidence Reconciliation:** Static and runtime verification across declared agent intent, supervisor grants, and observed tool execution.
+
+*Status: Research prototype evaluated on synthetic fixtures and CI-exported runs. Not a production control.*
 
 ---
+
+### Contact
+
+- **Public Collaboration:** [Open an issue](https://github.com/null-hype/agent-plugins/issues/new?template=apply-this.yml) to discuss open-source setups, reproduction, or test cases (public; do not include private credentials).
+- **Private Enquiries (Consulting, Research Collaboration, Advisory, Funding):** Email [`public.rant@pm.me`](mailto:public.rant@pm.me) for confidential discussions regarding production agent architectures. (Please describe workflow context; do not send secrets or API keys in initial outreach).
+
