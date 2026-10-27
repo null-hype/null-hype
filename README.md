@@ -6,6 +6,8 @@
 
 I treat agent behaviour as an experiment: capture the world, run the check, preserve the evidence, and put the finding back on the source it applies to.
 
+[Professional overview](https://www.tidelands.dev/) · [Start with the Worlds proof](https://github.com/null-hype/worlds#start-here-one-exact-world-proof)
+
 ```text
 agent / CI → worlds → checks → findings → witness → editor
                                             ↑
@@ -28,4 +30,4 @@ The lab explores capability checks, scoped supervisor exceptions, and evidence r
 
 *Research and prototype tools. Governance scenarios use synthetic fixtures and CI-exported runs; walkthrough progression is scripted, merge and budget calculations are computed, and approval is simulated.*
 
-For collaboration or reproductions, open an issue on the relevant repository. For consulting or research enquiries: [public.rant@pm.me](mailto:public.rant@pm.me).
+Available for senior software, security and AI infrastructure roles, and selected consulting work: [public.rant@pm.me](mailto:public.rant@pm.me).
