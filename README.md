@@ -2,26 +2,30 @@
 
 > *This profile is not a portfolio of promises; it is a log of evidence.*
 
-I build tools that connect automated changes to checks, findings, and evidence people can inspect.
+**I build verification infrastructure for agent-produced software.**
 
-My current work spans verification findings in the editor, reproducible delivery worlds, agent capability governance, and interactive lessons that make policy failures and supervisor decisions reviewable.
+I treat agent behaviour as an experiment: capture the world, run the check, preserve the evidence, and put the finding back on the source it applies to.
 
-### Current work
+```text
+agent / CI → worlds → checks → findings → witness → editor
+                                            ↑
+                                   features installs
+```
 
-- **[witness](https://github.com/null-hype/witness)** — A small Go language server that puts verification findings on the source they describe. Findings link to evidence, and source hashes flag results that have become stale. Includes a Neovim example and editor integration tests.
-- **[features](https://github.com/null-hype/features)** — A Dev Container feature that installs Witness, its Neovim client, and a recorded example run, bringing verification diagnostics and evidence navigation into a reproducible development environment.
-- **[worlds](https://github.com/null-hype/worlds)** — An agentic delivery harness that plans, builds, and runs a delivery, freezes its output as a reproducible world, and evaluates a registered claim against that exact snapshot. Extracted from `agent-plugins` with its history preserved.
-- **[agent-plugins](https://github.com/null-hype/agent-plugins)** — Research into agent capability checks, scoped supervisor exceptions, and evidence reconciliation. Start with the [two-minute demo](https://github.com/null-hype/agent-plugins/blob/main/docs/launch/demo.md) or the [claims and runnable checks](https://github.com/null-hype/agent-plugins/blob/main/docs/launch/claims-evidence.md).
-- **[Agent governance walkthrough](https://github.com/null-hype/null-hype.github.io)** — Interactive lessons exploring clean merges that violate a shared policy, diagnostic provenance, and repairs that preserve earlier verdicts.
+These are the system's boundaries: worlds preserves delivery evidence; checks produce findings; Witness presents findings that follow its input contract.
 
-### What I am exploring
+| Component | Role |
+| --- | --- |
+| [worlds](https://github.com/null-hype/worlds) | Plans, builds, and runs deliveries; freezes reproducible worlds and judges registered claims against exact snapshots. |
+| [witness](https://github.com/null-hype/witness) | Presents durable, source-addressed findings in the editor, with evidence navigation and stale-source detection. |
+| [features](https://github.com/null-hype/features) | Distributes Witness, its Neovim client, and a recorded example as a Dev Container feature. |
 
-How can a developer inspect what was verified, which source it applies to, and the evidence behind the result? How can a supervisor grant a scoped exception while preserving the original failure?
+### Research / origin
 
-`witness` extracts the editor-facing piece into a small, verifier-independent tool, and `features` packages it for Dev Containers. `worlds` captures delivery outputs and judges registered claims against frozen evidence. The governance work explores the checks and evidence that can feed that kind of interface.
+[agent-plugins](https://github.com/null-hype/agent-plugins) is the research monorepo; stable boundaries graduate into smaller repos. Worlds, Witness, and Features emerged from that work.
 
-*Research and prototype tools. The governance scenarios use synthetic fixtures and CI-exported runs; walkthrough progression is scripted, merge and budget calculations are computed, and the approval boundary is simulated.*
+The lab explores capability checks, scoped supervisor exceptions, and evidence reconciliation. Start with the [two-minute demo](https://github.com/null-hype/agent-plugins/blob/main/docs/launch/demo.md), the [claims and runnable checks](https://github.com/null-hype/agent-plugins/blob/main/docs/launch/claims-evidence.md), or the [interactive governance walkthrough](https://github.com/null-hype/null-hype.github.io).
 
-### Get in touch
+*Research and prototype tools. Governance scenarios use synthetic fixtures and CI-exported runs; walkthrough progression is scripted, merge and budget calculations are computed, and approval is simulated.*
 
-For collaboration, reproductions, or technical questions, open an issue on the relevant repository. For consulting or research enquiries: [public.rant@pm.me](mailto:public.rant@pm.me).
+For collaboration or reproductions, open an issue on the relevant repository. For consulting or research enquiries: [public.rant@pm.me](mailto:public.rant@pm.me).
