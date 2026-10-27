@@ -2,32 +2,24 @@
 
 > *This profile is not a portfolio of promises; it is a log of evidence.*
 
-Automated changes can each pass the same policy check and still violate it when merged cleanly. This project makes agent proposals reviewable through typed checks, linked evidence, and recorded supervisor exceptions that preserve prior verdicts.
+I build tools that connect automated changes to checks, findings, and evidence people can inspect.
 
----
+My current work spans verification findings in the editor, agent capability governance, and interactive lessons that make policy failures and supervisor decisions reviewable.
 
-### Quick Access
+### Current work
 
-- **Run the walkthrough:** [null-hype.tidelands.dev](https://null-hype.tidelands.dev) (interactive budget & authority lessons)
-- **60–120s Demo & Narrative:** [Walkthrough guide](https://github.com/null-hype/agent-plugins/blob/main/docs/launch/demo.md)
-- **Claim → Evidence Trail:** [claims and runnable test matrix](https://github.com/null-hype/agent-plugins/blob/main/docs/launch/claims-evidence.md)
-- **Source Code & Checks:** [null-hype/agent-plugins](https://github.com/null-hype/agent-plugins)
-- **UI Components & Storybook:** [Storybook preview](https://null-hype.github.io/agent-plugins/)
+- **[witness](https://github.com/null-hype/witness)** — A small Go language server that puts verification findings on the source they describe. Findings link to evidence, and source hashes flag results that have become stale. Includes a Neovim example and editor integration tests.
+- **[agent-plugins](https://github.com/null-hype/agent-plugins)** — Research into agent capability checks, scoped supervisor exceptions, and evidence reconciliation. Start with the [two-minute demo](https://github.com/null-hype/agent-plugins/blob/main/docs/launch/demo.md) or the [claims and runnable checks](https://github.com/null-hype/agent-plugins/blob/main/docs/launch/claims-evidence.md).
+- **[Agent governance walkthrough](https://github.com/null-hype/null-hype.github.io)** — Interactive lessons exploring clean merges that violate a shared policy, diagnostic provenance, and repairs that preserve earlier verdicts.
 
----
+### What I am exploring
 
-### Research & Consulting Focus
+How can a developer inspect what was verified, which source it applies to, and the evidence behind the result? How can a supervisor grant a scoped exception while preserving the original failure?
 
-- **Pre-Merge Semantic Invariants:** Detecting multi-agent capability and authorization drift before PR acceptance.
-- **Supervisor Protocols & Scoped Exceptions:** Recording supervisor overrides without discarding or mutating the original violation record.
-- **Evidence Reconciliation:** Static and runtime verification across declared agent intent, supervisor grants, and observed tool execution.
+`witness` extracts the editor-facing piece into a small, verifier-independent tool. The governance work explores the checks and evidence that can feed that kind of interface.
 
-*Status: Research prototype evaluated on synthetic fixtures and CI-exported runs. Not a production control.*
+*Research and prototype tools. The governance scenarios use synthetic fixtures and CI-exported runs; walkthrough progression is scripted, merge and budget calculations are computed, and the approval boundary is simulated.*
 
----
+### Get in touch
 
-### Contact
-
-- **Public Collaboration:** [Open an issue](https://github.com/null-hype/agent-plugins/issues/new?template=apply-this.yml) to discuss open-source setups, reproduction, or test cases (public; do not include private credentials).
-- **Private Enquiries (Consulting, Research Collaboration, Advisory, Funding):** Email [`public.rant@pm.me`](mailto:public.rant@pm.me) for confidential discussions regarding production agent architectures. (Please describe workflow context; do not send secrets or API keys in initial outreach).
-
+For collaboration, reproductions, or technical questions, open an issue on the relevant repository. For consulting or research enquiries: [public.rant@pm.me](mailto:public.rant@pm.me).
