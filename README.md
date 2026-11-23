@@ -30,4 +30,4 @@ The lab explores capability checks, scoped supervisor exceptions, and evidence r
 
 *Research and prototype tools. Governance scenarios use synthetic fixtures and CI-exported runs; walkthrough progression is scripted, merge and budget calculations are computed, and approval is simulated.*
 
-Available for senior software, security and AI infrastructure roles, and selected consulting work: [public.rant@pm.me](mailto:public.rant@pm.me).
+Contact: [public.rant@pm.me](mailto:public.rant@pm.me).
